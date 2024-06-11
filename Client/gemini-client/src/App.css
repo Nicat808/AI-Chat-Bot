@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#root{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #151515;
+}
+.container{
+  width: 60%;
+  height: 100%;
+  background-color: black;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 60px 0;
+  transition: 0.3s ease-in-out all;
+}
+.search{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.promptInput{
+  width: 100%;
+  outline: none;
+border: none;
+padding: 15px;
+font-size: 1rem;
+font-weight: 600;
+border-radius:8px
+}
+.promptButton{
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.5rem ;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #32012F;
+  color: white;
+}
+
+
+.chat{
+  overflow-y: auto;
+  color: white;
+  height: 100%;
+  transition: 0.3s ease-in-out all;
+}
+.chat-message h3{
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.chat-message{
+  background-color: #1B2430;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 16px;
+  width: fit-content;
+  transition: 0.3s ease-in-out all;
+}
+
+@media (max-width:576px) {
+  .container{
+    padding:15px
+  }
+  .chat-message{
+    margin: 30px 15px;
+    padding: 15px;
+  }
+}
